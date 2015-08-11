@@ -1,0 +1,19 @@
+/**
+* 闭合浮动
+* @Author:caoyi
+* @Doc: http://www.cnblogs.com/mofish/archive/2012/05/14/2499400.html
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /* IE6-7 触发 hasLayout */
+}
