@@ -71,6 +71,7 @@ html {
 body {
   font-size: 14px;
   line-height: 1.8;
+  text-align: center;
 }
 /**
  * 所有 font-family 小写，存在空格的字体名加单引号
@@ -104,8 +105,13 @@ textarea  /* 1 */
  * 1. 统一 IE 6-7 中字体大小
  * 2. 统一 Firefox 4+，Safari 5 和 Chrome 中「section」和「article」内的字体大小
  */
+//h1, h2, h3, h4, h5, h6 {
+//  font-weight: normal;
+//}
+
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+  font-weight: 200;
 }
 
 h1 {

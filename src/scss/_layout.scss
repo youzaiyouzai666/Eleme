@@ -1,6 +1,53 @@
-body{
-  text-align: center;
+$width :90%;//整个页面的宽度
+@mixin center($value:$width ){
+  margin-left:auto;
+  margin-right:auto;
+  width: $value;
+  height: auto;
 }
-header{
+.center{
+  @include center();
+}
+@media (min-width:1280px) {
+  .center {
+    width: 1216px
+  }
+}
+@media (min-width:1280px) {
+  .container {
+    width: 1216px
+  }
+}
+@mixin test($value:red){
+  border: 1px solid #ccc;
+  background: $value;
+}
+//.center{
+//  @include center();
+//  height: 60px;
+//}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 
+.header{
+  @include center(100%);
+  height: 60px;
+  background-color: #1E89E0;
+}
+
+nav{
+  @extend .center;
+  @include test;
+}
+article{
+  @extend .center;
+  @include test;
+}
+footer{
+  @extend .center;
+  @include test;
 }

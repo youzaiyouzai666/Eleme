@@ -66,7 +66,8 @@ html {
 
 body {
   font-size: 14px;
-  line-height: 1.8; }
+  line-height: 1.8;
+  text-align: center; }
 
 /**
  * 所有 font-family 小写，存在空格的字体名加单引号
@@ -100,7 +101,8 @@ textarea {
  * 2. 统一 Firefox 4+，Safari 5 和 Chrome 中「section」和「article」内的字体大小
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
+  font-family: PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+  font-weight: 200; }
 
 h1 {
   font-size: 36px; }
@@ -412,7 +414,62 @@ dialog::backdrop {
   *zoom: 1;
   /* IE6-7 触发 hasLayout */ }
 
-body {
-  text-align: center; }
+.center, nav, article, footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto; }
+
+@media (min-width: 1280px) {
+  .center, nav, article, footer {
+    width: 1216px; } }
+@media (min-width: 1280px) {
+  .container {
+    width: 1216px; } }
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  height: 60px;
+  background-color: #1E89E0; }
+
+nav {
+  border: 1px solid #ccc;
+  background: red; }
+
+article {
+  border: 1px solid #ccc;
+  background: red; }
+
+footer {
+  border: 1px solid #ccc;
+  background: red; }
+
+/**
+  eot：仅在老版本中的IE使用。
+  ttf：浏览器支持相对好的多。
+  svg：苹果浏览器支持的比较好，其他浏览器也在渐渐的支持。
+  woff：转为web字体指定的字体格式标准，被新版本浏览器广泛支持。
+*/
+@font-face {
+  font-family: "eleme";
+  font-style: normal;
+  font-weight: 400;
+  src: local("☺︎"), url("../resource/eleme.4b3045.woff2") format("woff2"), url("../resource/eleme.aadd9e.woff") format("woff"), url("../resource/eleme.deeaed.ttf") format("truetype"); }
+[class*="icon-"] {
+  font-family: eleme;
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1; }
 
 /*# sourceMappingURL=index.css.map */
