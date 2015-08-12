@@ -412,4 +412,7 @@ dialog::backdrop {
   *zoom: 1;
   /* IE6-7 触发 hasLayout */ }
 
+body {
+  text-align: center; }
+
 /*# sourceMappingURL=index.css.map */
