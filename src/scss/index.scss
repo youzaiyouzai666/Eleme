@@ -24,5 +24,29 @@
   font-feature-settings: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+//  line-height: 1;
+}
+.topbar-nav {
+  float: right;
+  width: 504px;
+  height: 60px;
+  color: #d2e7f9
+}
+.topbar-nav-link {
+  line-height: 60px;
+  padding: 0 10px;
+  width: 106px;
+  color: #a5d0f3;
+  position: relative;
+  cursor: pointer
+}
+.topbar-nav-link:hover{
+  color: #ffffff;
+}
+.topbar-profilebox {
+  color: #fff;
+  line-height: 60px;
+  a{
+    color: #ffffff;
+  }
 }

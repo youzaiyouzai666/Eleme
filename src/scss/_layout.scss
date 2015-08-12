@@ -38,6 +38,36 @@ $width :90%;//整个页面的宽度
   height: 60px;
   background-color: #1E89E0;
 }
+.icon-logo{
+  color: #fff;
+}
+.topbar-logo{
+  line-height: 60px;
+  margin-right:30px;
+}
+.topbar-item {
+  line-height: 60px;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  width: 104px;
+  text-align: center;
+}
+@media(min-width:1280px) {
+  .topbar-item {
+    width: 144px
+  }
+
+}
+
+.topbar-item:hover {
+  background: #0c77d1
+}
+
+.topbar-item:active {
+  background: #006bc7
+}
+
 
 nav{
   @extend .center;
