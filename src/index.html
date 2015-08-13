@@ -30,12 +30,23 @@
     <link sizes="96x96" type="image/png" href="//static2.ele.me/eleme/desktop/media/img/favicon.png" rel="icon">
 
     <title>饿了么首页模拟</title>
+    <!--[if lt IE 9]>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/respond-1.4.2.js"></script>
     <script src="js/html5.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <script src="js/jquery-2.0.3.js"></script>
+    <![endif]-->
+    <!--[if !IE]>
+    <script src="js/jquery-2.0.3.js"></script>
+    <![endif]-->
+
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
     <header class="header" role="navigation">
-        <div class="center clearfix" >
+        <div class="page_center clearfix" >
             <h2>
                 <a href="#" class="left topbar-logo icon-logo "><span>饿了么</span></a>
             </h2>
@@ -59,15 +70,43 @@
 
         </div>
     </header>
+    <div class="sidebar" role="complementary">
+        <!--<a class="sidebar_item">美<br>食<br>篮<br>子</a>-->
+        <a class="sidebar_item">美食篮子</a>
+    </div>
+    <div class=" clearfix" role="main">
+        <div class="page_center location-search">
+            <div class=" location clearfix" role="navigation">
+                <span class="location-item">当前位置:</span>
+                <span class="location-item location-current"><a href="/place/wx4g43p5nvur" class="inherit ng-binding">大望路</a></span>
+            <span class="location-item location-change">
+                <a class="ng-scope"  href="http://v5.ele.me/?force=1" >[切换地址]</a>
+             </span>
+            </div>
+            <div class="search" role="search">
+                <a ubt-data-keyword="" class="place-search-btn icon-search" title="搜索餐厅或美食"></a>
+                <!--<label for="globalsearch">搜索餐厅或美食</label>-->
+                <input id="globalsearch" class="place-search-input ng-pristine ng-valid" placeholder="搜索餐厅,美食...">
+                <div class="searchbox">
+                </div>
+            </div>
+        </div>
+
+        <div class="page_center banner" role="banner">
+
+        </div>
+    </div>
+
     <nav class="" role="navigation">
         <h2>饿了么</h2>
     </nav>
+
     <article>
         article
     </article>
     <footer>
         footer
-        <script src="js/jquery-2.0.3.js"></script>
+
     </footer>
 </body>
 </html>

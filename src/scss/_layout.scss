@@ -5,16 +5,16 @@ $width :90%;//整个页面的宽度
   width: $value;
   height: auto;
 }
-.center{
+.page_center{
   @include center();
 }
 @media (min-width:1280px) {
-  .center {
+  .page_center {
     width: 1216px
   }
 }
 @media (min-width:1280px) {
-  .container {
+  .page_center {
     width: 1216px
   }
 }
@@ -59,6 +59,9 @@ $width :90%;//整个页面的宽度
   }
 
 }
+.location-search{
+  height: 54px;
+}
 
 .topbar-item:hover {
   background: #0c77d1
@@ -67,17 +70,30 @@ $width :90%;//整个页面的宽度
 .topbar-item:active {
   background: #006bc7
 }
+.banner{
+  height: 98px;
+  background: #ccc;
+}
 
-
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: -295px;
+  background-color: #504D53;
+  width: 330px;
+  transition: transform 0.3s ease-in-out 0s;
+  z-index: 7;
+}
 nav{
-  @extend .center;
+  @extend .page_center;
   @include test;
 }
 article{
-  @extend .center;
+  @extend .page_center;
   @include test;
 }
 footer{
-  @extend .center;
+  @extend .page_center;
   @include test;
 }

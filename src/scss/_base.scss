@@ -27,6 +27,7 @@ ol,ul{
  */
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /**
@@ -65,7 +66,7 @@ html {
   -ms-text-size-adjust: 100%; /* 1 */
   -webkit-text-size-adjust: 100%; /* 1 */
   text-size-adjust: 100%;
-  font-size: 62.5%; /* 10/16=62.5% */
+//  font-size: 62.5%; /* 10/16=62.5% */
 }
 
 body {
@@ -95,9 +96,10 @@ input, /* 1 */
 select, /* 1 */
 textarea  /* 1 */
 {
-  font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
-  -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
-  text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
+//  font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+//  -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
+//  text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
+  font: 300 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans
 }
 
 /**
@@ -339,7 +341,7 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
+//hgroup,
 main,
 nav,
 section,

@@ -25,7 +25,8 @@ ol, ul {
  * 去除链接默认的下划线，提高文字可读性
  */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 /**
 * 去掉 IE 10+ 点击链接时的灰色背景
@@ -60,9 +61,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 1 */
-  text-size-adjust: 100%;
-  font-size: 62.5%;
-  /* 10/16=62.5% */ }
+  text-size-adjust: 100%; }
 
 body {
   font-size: 14px;
@@ -89,11 +88,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
-  -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
-  /* 5 */
-  text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
-  /* 5 */ }
+  font: 300 1em/1.5 PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans; }
 
 /**
  * 中文小于 12px 可读性很差
@@ -321,7 +316,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 nav,
 section,
@@ -414,17 +408,17 @@ dialog::backdrop {
   *zoom: 1;
   /* IE6-7 触发 hasLayout */ }
 
-.center, nav, article, footer {
+.page_center, nav, article, footer {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   height: auto; }
 
 @media (min-width: 1280px) {
-  .center, nav, article, footer {
+  .page_center, nav, article, footer {
     width: 1216px; } }
 @media (min-width: 1280px) {
-  .container {
+  .page_center, nav, article, footer {
     width: 1216px; } }
 .left {
   float: left; }
@@ -458,11 +452,28 @@ dialog::backdrop {
 @media (min-width: 1280px) {
   .topbar-item {
     width: 144px; } }
+.location-search {
+  height: 54px; }
+
 .topbar-item:hover {
   background: #0c77d1; }
 
 .topbar-item:active {
   background: #006bc7; }
+
+.banner {
+  height: 98px;
+  background: #ccc; }
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: -295px;
+  background-color: #504D53;
+  width: 330px;
+  transition: transform 0.3s ease-in-out 0s;
+  z-index: 7; }
 
 nav {
   border: 1px solid #ccc;
@@ -517,5 +528,58 @@ footer {
   line-height: 60px; }
   .topbar-profilebox a {
     color: #ffffff; }
+
+.location {
+  position: absolute; }
+
+.location-item {
+  display: inline-block;
+  line-height: 54px;
+  height: 54px;
+  vertical-align: top;
+  float: left; }
+
+.location-item:first-child {
+  color: #999; }
+
+.location-change {
+  color: #0089DC; }
+
+.search {
+  float: right;
+  margin: 10px 0px;
+  height: 32px;
+  border: 1px solid #CCC;
+  position: relative; }
+
+.place-search-btn:hover {
+  color: #0089DC; }
+
+.place-search-btn {
+  float: right;
+  width: 46px;
+  border-left: 1px solid #CCC;
+  text-align: center;
+  color: #999;
+  font-size: 20px;
+  cursor: pointer; }
+
+.sidebar_item {
+  color: #CCC;
+  line-height: 16px;
+  padding: 7px 8px 10px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  width: 19px;
+  position: absolute;
+  top: 50%;
+  margin-top: -220px; }
+
+.sidebar_item:hover {
+  color: #FFF;
+  background-color: #26A2FF; }
 
 /*# sourceMappingURL=index.css.map */
