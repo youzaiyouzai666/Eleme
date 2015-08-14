@@ -74,6 +74,15 @@
   font-size: 20px;
   cursor: pointer;
 }
+.page_place_takeout{
+  width: 186px;
+  height: 55px;
+
+  margin-bottom: -13px;
+  margin-top: -6px;
+
+  cursor: pointer;
+}
 
 .sidebar_item{
   color: #CCC;
@@ -94,4 +103,41 @@
 .sidebar_item:hover{
   color: #FFF;
   background-color: #26A2FF;
+}
+.subnav{
+  border: 1px solid #E6E6E6;
+}
+.subnav-item{
+  line-height: 26px;
+  padding: 10px 10px 10px 7em;
+  background-color: #FFF;
+  position: relative;
+  text-align: left;
+}
+.subnav-item-name{
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  color: #999;
+}
+.subnav-item-attr{
+  white-space: nowrap;
+  display: inline-block;
+  margin: 5px 6px;
+}
+.subnav-item-attr:hover{
+  background-color: #F6F6F6;
+  border-radius: 3px;
+}
+.subnav-item-attr.focus{
+  color: #FFF;
+  background-color: #0089DC;
+  border-radius: 3px;
+}
+.article-place{
+  line-height: 40px;
+  margin-left: 10px;
+  .article-place-left-item{
+    padding: 0px 10px;
+  }
 }

@@ -85,14 +85,30 @@ $width :90%;//整个页面的宽度
   transition: transform 0.3s ease-in-out 0s;
   z-index: 7;
 }
-nav{
-  @extend .page_center;
-  @include test;
+
+.page_place{
+  line-height: 40px;
+  font-size: 18px;
+  border-bottom: 1px solid #E6E6E6;
 }
-article{
-  @extend .page_center;
-  @include test;
+.page_place-item{
+  color: #666;
+  padding: 0px 20px;
+  display: inline-block;
 }
+.page_place-item.focus{
+  color: #0089DC;
+  border-bottom: 3px solid #0089DC;
+  margin-bottom: -2px;
+}
+//nav{
+//  @extend .page_center;
+//  @include test;
+//}
+//article{
+//  @extend .page_center;
+//  @include test;
+//}
 footer{
   @extend .page_center;
   @include test;

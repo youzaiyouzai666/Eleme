@@ -26,7 +26,8 @@ ol, ul {
  */
 a {
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  cursor: pointer; }
 
 /**
 * 去掉 IE 10+ 点击链接时的灰色背景
@@ -408,17 +409,17 @@ dialog::backdrop {
   *zoom: 1;
   /* IE6-7 触发 hasLayout */ }
 
-.page_center, nav, article, footer {
+.page_center, footer {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
   height: auto; }
 
 @media (min-width: 1280px) {
-  .page_center, nav, article, footer {
+  .page_center, footer {
     width: 1216px; } }
 @media (min-width: 1280px) {
-  .page_center, nav, article, footer {
+  .page_center, footer {
     width: 1216px; } }
 .left {
   float: left; }
@@ -475,17 +476,27 @@ dialog::backdrop {
   transition: transform 0.3s ease-in-out 0s;
   z-index: 7; }
 
-nav {
-  border: 1px solid #ccc;
-  background: red; }
+.page_place {
+  line-height: 40px;
+  font-size: 18px;
+  border-bottom: 1px solid #E6E6E6; }
 
-article {
-  border: 1px solid #ccc;
-  background: red; }
+.page_place-item {
+  color: #666;
+  padding: 0px 20px;
+  display: inline-block; }
+
+.page_place-item.focus {
+  color: #0089DC;
+  border-bottom: 3px solid #0089DC;
+  margin-bottom: -2px; }
 
 footer {
   border: 1px solid #ccc;
   background: red; }
+
+body, html {
+  background: #f7f7f7; }
 
 /**
   eot：仅在老版本中的IE使用。
@@ -909,6 +920,13 @@ footer {
   font-size: 20px;
   cursor: pointer; }
 
+.page_place_takeout {
+  width: 186px;
+  height: 55px;
+  margin-bottom: -13px;
+  margin-top: -6px;
+  cursor: pointer; }
+
 .sidebar_item {
   color: #CCC;
   line-height: 16px;
@@ -926,5 +944,41 @@ footer {
 .sidebar_item:hover {
   color: #FFF;
   background-color: #26A2FF; }
+
+.subnav {
+  border: 1px solid #E6E6E6; }
+
+.subnav-item {
+  line-height: 26px;
+  padding: 10px 10px 10px 7em;
+  background-color: #FFF;
+  position: relative;
+  text-align: left; }
+
+.subnav-item-name {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  color: #999; }
+
+.subnav-item-attr {
+  white-space: nowrap;
+  display: inline-block;
+  margin: 5px 6px; }
+
+.subnav-item-attr:hover {
+  background-color: #F6F6F6;
+  border-radius: 3px; }
+
+.subnav-item-attr.focus {
+  color: #FFF;
+  background-color: #0089DC;
+  border-radius: 3px; }
+
+.article-place {
+  line-height: 40px;
+  margin-left: 10px; }
+  .article-place .article-place-left-item {
+    padding: 0px 10px; }
 
 /*# sourceMappingURL=index.css.map */
