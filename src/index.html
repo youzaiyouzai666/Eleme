@@ -38,17 +38,20 @@
     <!--[if gte IE 9]>
     <script src="js/jquery-2.0.3.js"></script>
     <![endif]-->
-    <!--[if !IE]>
-    <script src="js/jquery-2.0.3.js"></script>
-    <![endif]-->
 
+    <!--[if !IE]><!-->
+    <script src="js/jquery-2.0.3.js"></script>
+    <!--<![endif]-->
+
+    <script src="js/jquery.slides.js"></script>
+    <script src="js/index.js"></script>
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
     <header class="header" role="navigation">
         <div class="page_center clearfix" >
             <h2>
-                <a href="#" class="left topbar-logo icon-logo "><span>饿了么</span></a>
+                <a href="#" class="left topbar-logo icon-logo "><span></span></a>
             </h2>
             <a href="#" class="left topbar-item">首页</a>
             <a href="#" class="left topbar-item">品牌餐厅</a>
@@ -60,11 +63,12 @@
                 <div class="left topbar-nav-link"><i class=" topbar-nav-icon icon-mobile"></i>手机应用</div>
 
                 <div class="right topbar-profilebox">
-                <span class="">
-                    <a href="https://account.ele.me/login" target="_blank">登录</a>
-                    /
-                    <a href="https://account.ele.me/register" target="_blank">注册</a>
-                </span>
+                    <span class="topbar-profilebox-avatar icon-profile" ></span>
+                    <span class="">
+                        <a href="https://account.ele.me/login" target="_blank">登录</a>
+                        /
+                        <a href="https://account.ele.me/register" target="_blank">注册</a>
+                    </span>
                 </div>
             </div>
 
@@ -72,7 +76,7 @@
     </header>
     <div class="sidebar" role="complementary">
         <!--<a class="sidebar_item">美<br>食<br>篮<br>子</a>-->
-        <a class="sidebar_item">美食篮子</a>
+        <a class="sidebar_item icon-cart">美食篮子</a>
     </div>
     <div class=" clearfix" role="main">
         <div class="page_center location-search">
@@ -92,11 +96,16 @@
             </div>
         </div>
 
-        <div class="page_center banner" role="banner">
-
+        <div class="page_center banner" id="banner" role="banner">
+            <img src="img/banner1.gif">
+            <img src="img/banner1.gif">
+            <img src="img/banner1.gif">
+            <img src="img/banner1.gif">
+            <img src="img/banner1.gif">
         </div>
     </div>
 
+    <!--
     <nav class="" role="navigation">
         <h2>饿了么</h2>
     </nav>
@@ -108,5 +117,6 @@
         footer
 
     </footer>
+    -->
 </body>
 </html>

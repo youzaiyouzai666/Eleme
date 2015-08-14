@@ -1,22 +1,8 @@
 @import "base";
 @import "util";
 @import "layout";
-/**
-  eot：仅在老版本中的IE使用。
-  ttf：浏览器支持相对好的多。
-  svg：苹果浏览器支持的比较好，其他浏览器也在渐渐的支持。
-  woff：转为web字体指定的字体格式标准，被新版本浏览器广泛支持。
-*/
-@font-face {
-  font-family: "eleme";
-  font-style: normal;
-  font-weight: 400;
-  src: local("☺︎"),
-      url("../resource/eleme.4b3045.woff2") format("woff2"),
-      url("../resource/eleme.aadd9e.woff") format("woff"),
-      url("../resource/eleme.deeaed.ttf") format("truetype"),
-      //url("//static11.elemecdn.com/eleme/desktop/media/font/eleme.c72f8f.svg#eleme") format("svg");
-}
+@import "eleme";
+
 [class*="icon-"]{
   font-family: eleme;
   font-style: normal;
@@ -49,6 +35,9 @@
   a{
     color: #ffffff;
   }
+}
+.topbar-profilebox-avatar {
+  font-size: 22px;
 }
 .location{
   position: absolute;
