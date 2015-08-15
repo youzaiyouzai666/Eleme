@@ -3,15 +3,7 @@
 @import "layout";
 @import "eleme";
 
-[class*="icon-"]{
-  font-family: eleme;
-  font-style: normal;
-  font-weight: 400;
-  font-feature-settings: normal;
-  font-variant: normal;
-  text-transform: none;
-//  line-height: 1;
-}
+
 .topbar-nav {
   float: right;
   width: 504px;
@@ -139,5 +131,28 @@
   margin-left: 10px;
   .article-place-left-item{
     padding: 0px 10px;
+  }
+  .article-place-right-item{
+    cursor: pointer;
+  }
+}
+.article-tip{
+  margin-top: 10px;
+  line-height: 40px;
+  padding: 0px 10px;
+  background-color: #FFFDEE;
+  border: 1px solid #FFE4B9;
+
+  text-align: left;
+  .article-tip-content{
+    line-height: 40px;
+  }
+  .ng-binding{
+    font-style: normal;
+    color: #F63;
+    font-size: 20px;
+  }
+  a{
+    color: #0089DC;
   }
 }

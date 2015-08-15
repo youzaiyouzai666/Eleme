@@ -26,12 +26,7 @@ $width :90%;//整个页面的宽度
 //  @include center();
 //  height: 60px;
 //}
-.left{
-  float: left;
-}
-.right{
-  float: right;
-}
+
 
 .header{
   @include center(100%);
