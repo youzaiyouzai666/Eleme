@@ -498,6 +498,9 @@ footer {
 body, html {
   background: #f7f7f7; }
 
+html, html *, html :after, html :before {
+  box-sizing: border-box; }
+
 [class*="icon-"] {
   font-family: eleme;
   font-style: normal;
@@ -654,6 +657,9 @@ body, html {
 
 .icon-star:before {
   content: ""; }
+
+.icon-stars:before {
+  content: ""; }
 
 .icon-favor:before {
   content: ""; }
@@ -978,6 +984,8 @@ body, html {
 .article-place {
   line-height: 40px;
   margin-left: 10px; }
+  .article-place .article-place-left .focus {
+    color: #0089DC; }
   .article-place .article-place-left-item {
     padding: 0px 10px; }
   .article-place .article-place-right-item {
@@ -998,5 +1006,95 @@ body, html {
     font-size: 20px; }
   .article-tip a {
     color: #0089DC; }
+
+.aritcle-content {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-bottom: 0;
+  margin-top: 20px;
+  background: #fff; }
+
+.article-tip2 .article-tip2-left {
+  text-align: left;
+  height: 37px;
+  line-height: 30px;
+  padding: 0px 12px;
+  margin: 5px 0px 0px -5px;
+  color: #FFF;
+  font-size: 16px;
+  width: 600px;
+  background: transparent url("../img/icon.png") no-repeat scroll 0% 0%; }
+.article-tip2 .article-tip2-right {
+  margin-right: 10px;
+  color: #666;
+  line-height: 34px; }
+.article-tip2 .ng-binding {
+  color: #0089DC;
+  font-weight: 700; }
+
+.stores .store {
+  background-color: #FFF;
+  border-bottom: 1px solid #F5F5F5;
+  width: 33.3333%;
+  height: 140px; }
+  .stores .store .store-left {
+    padding: 20px;
+    color: #999;
+    text-align: center;
+    position: relative; }
+    .stores .store .store-left .store-left-icon {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px; }
+    .stores .store .store-left .store-logo-passicon {
+      position: absolute;
+      height: 25px;
+      top: 70px;
+      left: 77px;
+      z-index: 1; }
+  .stores .store .store-content {
+    color: #999;
+    padding: 20px;
+    font-size: 12px; }
+  .stores .store .store-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333; }
+  .stores .store .store-starrating {
+    position: relative;
+    display: inline-block;
+    line-height: 1em;
+    color: #CCC; }
+    .stores .store .store-starrating .starrating-icon {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+      color: #FFC30C;
+      white-space: nowrap; }
+  .stores .store .store-activity i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFF;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 18px;
+    border-radius: 2px;
+    margin-right: 3px;
+    padding: 1px;
+    background-color: #F63; }
+.stores .store:hover {
+  background: #F7F7F7; }
+@media (min-width: 1280px) {
+  .stores .store {
+    width: 25%; } }
 
 /*# sourceMappingURL=index.css.map */

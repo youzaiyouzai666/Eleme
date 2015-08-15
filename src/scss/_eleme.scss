@@ -1,6 +1,9 @@
 body,html {
   background: #f7f7f7
 }
+html,html *,html :after,html :before {
+  box-sizing: border-box
+}
 [class*="icon-"]{
   font-family: eleme;
   font-style: normal;
@@ -209,7 +212,9 @@ body,html {
 .icon-star:before {
   content: "\e624"
 }
-
+.icon-stars:before{
+  content: "\e624\e624\e624\e624\e624"
+}
 .icon-favor:before {
   content: "\e625"
 }
