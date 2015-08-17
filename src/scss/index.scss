@@ -195,6 +195,7 @@
 }
 .stores{
   .store{
+    position: relative;
     background-color: #FFF;
     border-bottom: 1px solid #F5F5F5;
     width: 33.3333%;
@@ -273,4 +274,12 @@
       width: 25%
     }
   }
+}
+.store:hover .store-bubble{
+  display: block;
+}
+.store-bubble{
+  position: absolute;
+  top: 0;
+  right: -200px;
 }

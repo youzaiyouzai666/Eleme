@@ -418,6 +418,9 @@ dialog::backdrop {
 .img30 {
   height: 30px; }
 
+.none {
+  display: none; }
+
 .page_center {
   margin-left: auto;
   margin-right: auto;
@@ -1045,6 +1048,36 @@ html, html *, html :after, html :before {
 .icon-404-email:before {
   content: ""; }
 
+.bubble {
+  background: #FFFFFF;
+  border: 2px solid #cccccc;
+  width: 200px;
+  z-index: 6;
+  height: 300px;
+  position: relative; }
+
+.bubble:after {
+  content: " ";
+  box-sizing: inherit;
+  position: absolute;
+  left: -19px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent #FFFFFF transparent transparent; }
+
+.bubble:before {
+  content: " ";
+  box-sizing: inherit;
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent #cccccc transparent transparent; }
+
 .topbar-nav {
   float: right;
   width: 504px;
@@ -1213,6 +1246,7 @@ html, html *, html :after, html :before {
   font-weight: 700; }
 
 .stores .store {
+  position: relative;
   background-color: #FFF;
   border-bottom: 1px solid #F5F5F5;
   width: 33.3333%;
@@ -1276,5 +1310,13 @@ html, html *, html :after, html :before {
 @media (min-width: 1280px) {
   .stores .store {
     width: 25%; } }
+
+.store:hover .store-bubble {
+  display: block; }
+
+.store-bubble {
+  position: absolute;
+  top: 0;
+  right: -200px; }
 
 /*# sourceMappingURL=index.css.map */

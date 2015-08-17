@@ -486,3 +486,35 @@ html,html *,html :after,html :before {
 .icon-404-email:before {
   content: "\e663"
 }
+.bubble{
+  background: #FFFFFF;
+  border: 2px solid #cccccc;
+  width: 200px;
+  z-index:6 ;
+  height: 300px;
+  position:relative;
+
+}
+.bubble:after{
+  content: " ";
+  box-sizing: inherit;
+  position: absolute;
+  left: -19px;
+  top:20px;
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color:  transparent #FFFFFF transparent transparent;
+}
+.bubble:before{
+  content: " ";
+  box-sizing: inherit;
+  position: absolute;
+  left: -20px;
+  top:20px;
+
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent #cccccc  transparent transparent ;
+}
