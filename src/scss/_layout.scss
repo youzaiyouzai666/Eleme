@@ -96,6 +96,225 @@ $width :90%;//整个页面的宽度
   border-bottom: 3px solid #0089DC;
   margin-bottom: -2px;
 }
+.footer{
+  margin-top:50px ;
+  border-top: 1px solid #EEE;
+
+  background-color: #f7f7f7;
+  margin-top: 50px;
+  border-top: 1px solid #eee
+}
+.footer-contect,.footer-link,.footer-mobile {
+  float: left;
+  width: 15%;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.footer-contect a:hover,.footer-link a:hover,.footer-mobile a:hover {
+  color: #333;
+  text-decoration: underline
+}
+
+.footer-contect-item [class^=icon-]:hover,.footer-contect-item>a:hover {
+  text-decoration: none
+}
+
+.footer-mobile {
+  float: right
+}
+
+.footer-link-title {
+  font-size: 14px;
+  line-height: 30px
+}
+
+.footer-contect-item,.footer-link-item {
+  color: #999;
+  display: block;
+  line-height: 24px
+}
+
+.footer-link-item {
+  width: 50%;
+  font-size: 12px
+}
+
+.footer-contect {
+  padding-left: 3%;
+  border-left: 1px #e6e6e6 solid;
+  width: 23%;
+  padding-right: 10px
+}
+
+.footer-contect-icon:before {
+  float: left;
+  width: 30px;
+  height: 30px;
+  color: #666;
+  font-size: 28px
+}
+
+.footer-contect-item {
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 14px
+}
+
+.footer-contect-item [class^=icon-] {
+  cursor: pointer;
+  position: relative;
+  margin-left: 10px;
+  display: inline-block
+}
+
+.footer-contect-item [class^=icon-]:before {
+  font-size: 24px;
+  color: #ccc;
+  vertical-align: middle
+}
+
+.footer-contect-item .icon-renren:before {
+  font-size: 30px
+}
+
+.footer-contect-item .icon-wechat {
+  margin-left: 5px
+}
+
+.footer-contect-item .icon-wechat .dropbox {
+  display: none
+}
+
+.footer-contect-item .icon-wechat:hover:before {
+  color: #77d175
+}
+
+.footer-contect-item .icon-wechat:hover .dropbox {
+  display: block
+}
+
+.footer-contect-item .icon-weibo:hover:before {
+  color: #fb545f
+}
+
+.footer-contect-item .icon-renren:hover:before {
+  color: #47a9f7
+}
+
+.footer-contect-dropbox {
+  bottom: 30px;
+  left: -60px;
+  text-align: center
+}
+
+.footer-contect-dropbox img {
+  width: 130px;
+  height: 130px
+}
+
+.footer-contect-dropbox:before {
+  left: 65px;
+  border-color: #fff transparent transparent;
+  z-index: 2
+}
+
+.footer-contect-dropbox:after {
+  content: "";
+  position: absolute;
+  left: 65px;
+  bottom: -11px;
+  border: 5px solid #fff;
+  border-color: #ccc transparent transparent;
+  z-index: 1
+}
+
+.footer-mobile {
+  width: 265px
+}
+
+.footer-mobile-icon {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+  float: left
+}
+
+.footer-mobile-content {
+  margin-left: 90px
+}
+
+.footer-mobile-content h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  line-height: 30px
+}
+
+.footer-mobile-content p {
+  font-size: 12px;
+  color: #666;
+  margin: 3px 0 10px
+}
+
+.footer-mobile-content a {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #dedede;
+  font-size: 12px;
+  color: #666;
+  padding: 0 4px;
+  line-height: 24px
+}
+
+.footer-mobile-content a:hover {
+  color: #333
+}
+
+.footer-mobile-content .icon-android:before,.footer-mobile-content .icon-phone:before {
+  font-size: 18px;
+  vertical-align: sub;
+  margin-right: 3px
+}
+
+.footer-mobile-content .icon-android:before {
+  color: #bcd07a
+}
+
+.footer-copyright {
+  font-size: 12px;
+  clear: both;
+  padding-top: 60px;
+  color: #999;
+  text-align: center
+}
+
+.footer-copyright a {
+  color: inherit
+}
+
+.footer-copyright a:hover {
+  color: #333;
+  text-decoration: underline
+}
+
+.footer-police {
+  padding: .5em 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.importantnotification div {
+  margin-top: 8px;
+  line-height: 40px;
+  padding: 0 10px;
+  background-color: #fffdee;
+  border: 1px solid #ffe4b9;
+  font-style: normal;
+  color: #f63;
+  font-size: 16px
+}
+
 //nav{
 //  @extend .page_center;
 //  @include test;
@@ -104,7 +323,7 @@ $width :90%;//整个页面的宽度
 //  @extend .page_center;
 //  @include test;
 //}
-footer{
-  @extend .page_center;
-  @include test;
-}
+//footer{
+//  @extend .page_center;
+//  @include test;
+//}
