@@ -18,6 +18,9 @@ ol, ul {
   list-style-type: none;
   list-style-image: none; }
 
+li {
+  list-style-type: none; }
+
 /* ==========================================================================
    链接
    ========================================================================== */
@@ -420,6 +423,9 @@ dialog::backdrop {
 
 .none {
   display: none; }
+
+.font999 {
+  color: #999999; }
 
 .page_center {
   margin-left: auto;
@@ -1048,35 +1054,46 @@ html, html *, html :after, html :before {
 .icon-404-email:before {
   content: ""; }
 
+/********************************************气泡*********************************/
 .bubble {
   background: #FFFFFF;
   border: 2px solid #cccccc;
-  width: 200px;
+  width: 100%;
   z-index: 6;
-  height: 300px;
+  height: auto;
   position: relative; }
 
-.bubble:after {
+.bubble:after, .bubble:before {
   content: " ";
-  box-sizing: inherit;
   position: absolute;
-  left: -19px;
-  top: 20px;
   width: 0;
   height: 0;
-  border: 10px solid;
+  border: 10px solid; }
+
+.bubble:after {
+  left: -19px;
+  top: 20px;
   border-color: transparent #FFFFFF transparent transparent; }
 
 .bubble:before {
-  content: " ";
-  box-sizing: inherit;
-  position: absolute;
   left: -20px;
   top: 20px;
-  width: 0;
-  height: 0;
-  border: 10px solid;
   border-color: transparent #cccccc transparent transparent; }
+
+.activity {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  text-align: center;
+  width: 18px;
+  border-radius: 2px;
+  margin-right: 3px;
+  padding: 1px;
+  background-color: #F63; }
 
 .topbar-nav {
   float: right;
@@ -1125,7 +1142,8 @@ html, html *, html :after, html :before {
   margin: 10px 0px;
   height: 32px;
   border: 1px solid #CCC;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
 
 .place-search-btn:hover {
   color: #0089DC; }
@@ -1196,7 +1214,8 @@ html, html *, html :after, html :before {
 
 .article-place {
   line-height: 40px;
-  margin-left: 10px; }
+  z-index: 10;
+  background: #F7F7F7; }
   .article-place .article-place-left .focus {
     color: #0089DC; }
   .article-place .article-place-left-item {
@@ -1254,8 +1273,7 @@ html, html *, html :after, html :before {
   .stores .store .store-left {
     padding: 20px;
     color: #999;
-    text-align: center;
-    position: relative; }
+    text-align: center; }
     .stores .store .store-left .store-left-icon {
       display: block;
       width: 70px;
@@ -1291,20 +1309,6 @@ html, html *, html :after, html :before {
       overflow: hidden;
       color: #FFC30C;
       white-space: nowrap; }
-  .stores .store .store-activity i {
-    display: inline-block;
-    vertical-align: middle;
-    color: #FFF;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 16px;
-    overflow: hidden;
-    text-align: center;
-    width: 18px;
-    border-radius: 2px;
-    margin-right: 3px;
-    padding: 1px;
-    background-color: #F63; }
 .stores .store:hover {
   background: #F7F7F7; }
 @media (min-width: 1280px) {
@@ -1315,8 +1319,28 @@ html, html *, html :after, html :before {
   display: block; }
 
 .store-bubble {
+  font-size: 12px;
   position: absolute;
   top: 0;
-  right: -200px; }
+  right: -100%;
+  padding: 10px 8px;
+  text-align: left; }
+
+.bubblue-head {
+  padding: 10px 0;
+  border-bottom: 1px solid #999; }
+
+.bubble-center {
+  padding: 10px 0; }
+
+.bubble-tab {
+  background: #F7F7F7 none repeat scroll 0% 0%;
+  padding: 6px 0;
+  margin: 10px 0; }
+  .bubble-tab span {
+    border-right: 1px solid #999999;
+    padding: 0 15px; }
+  .bubble-tab .clearBorder {
+    border-right: none; }
 
 /*# sourceMappingURL=index.css.map */

@@ -486,35 +486,48 @@ html,html *,html :after,html :before {
 .icon-404-email:before {
   content: "\e663"
 }
+/********************************************气泡*********************************/
 .bubble{
   background: #FFFFFF;
   border: 2px solid #cccccc;
-  width: 200px;
+  width: 100%;
   z-index:6 ;
-  height: 300px;
+  height: auto;
   position:relative;
 
 }
-.bubble:after{
+.bubble:after,.bubble:before{
   content: " ";
-  box-sizing: inherit;
+//  box-sizing: border-box;
   position: absolute;
-  left: -19px;
-  top:20px;
   width: 0;
   height: 0;
   border: 10px solid;
+}
+.bubble:after{
+  left: -19px;
+  top:20px;
+
   border-color:  transparent #FFFFFF transparent transparent;
 }
 .bubble:before{
-  content: " ";
-  box-sizing: inherit;
-  position: absolute;
   left: -20px;
   top:20px;
 
-  width: 0;
-  height: 0;
-  border: 10px solid;
   border-color: transparent #cccccc  transparent transparent ;
+}
+.activity{
+    display: inline-block;
+    vertical-align: middle;
+    color: #FFF;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 18px;
+    border-radius: 2px;
+    margin-right: 3px;
+    padding: 1px;
+    background-color: #F63;
 }

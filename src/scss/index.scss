@@ -53,6 +53,7 @@
   height: 32px;
   border: 1px solid #CCC;
   position: relative;
+  z-index: 10;
 }
 .place-search-btn:hover {
   color: #0089DC;
@@ -128,7 +129,9 @@
 }
 .article-place{
   line-height: 40px;
-  margin-left: 10px;
+//  margin-left: 10px;
+  z-index: 10;
+  background: #F7F7F7;
   .article-place-left {
     .focus{
       color: #0089DC;
@@ -204,7 +207,7 @@
       padding: 20px;
       color: #999;
       text-align: center;
-      position: relative;
+//      position: relative;
 
       .store-left-icon{
         display: block;
@@ -249,21 +252,7 @@
         white-space: nowrap;
       }
     }
-    .store-activity i{
-      display: inline-block;
-      vertical-align: middle;
-      color: #FFF;
-      font-style: normal;
-      font-size: 12px;
-      line-height: 16px;
-      overflow: hidden;
-      text-align: center;
-      width: 18px;
-      border-radius: 2px;
-      margin-right: 3px;
-      padding: 1px;
-      background-color: #F63;
-    }
+
 
   }
   .store:hover{
@@ -279,7 +268,29 @@
   display: block;
 }
 .store-bubble{
+  font-size: 12px;
   position: absolute;
   top: 0;
-  right: -200px;
+  right: -100%;
+  padding:10px 8px ;
+  text-align: left;
+}
+.bubblue-head{
+  padding: 10px 0;
+  border-bottom: 1px solid #999 ;
+}
+.bubble-center{
+  padding: 10px 0;
+}
+.bubble-tab{
+  background: #F7F7F7 none repeat scroll 0% 0%;
+  padding: 6px 0;
+  margin: 10px 0;
+  span{
+    border-right: 1px solid #999999 ;
+    padding:0 15px;
+  }
+  .clearBorder{
+    border-right: none;
+  }
 }

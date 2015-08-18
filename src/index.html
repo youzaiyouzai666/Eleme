@@ -97,10 +97,12 @@
 
         <div class="banner" id="banner" role="banner">
             <img src="img/banner1.gif">
+            <!--
             <img src="img/banner1.gif">
             <img src="img/banner1.gif">
             <img src="img/banner1.gif">
             <img src="img/banner1.gif">
+            -->
         </div>
         <div class="page_place clearfix">
             <a class="page_place-item left focus">外卖餐厅</a>
@@ -140,38 +142,46 @@
                     <a class="subnav-item-attr">全部商家</a>
                     <a class="subnav-item-attr">全部商家</a>
                 </div>
+                <div class="article-place page_center clearfix" id="js-top">
+                    <div class="article-place-left left">
+                        <a class="article-place-left-item focus">默认排序</a>
+                        <a class="article-place-left-item">销量</a>
+                        <a class="article-place-left-item">评价</a>
+                        <a class="article-place-left-item">其他排序
+                            <i class="icon-arrow-down"></i>
+                        </a>
+                        <a class="article-place-left-item">起送价
+                            <i class="icon-arrow-down"></i>
+                        </a>
+                    </div>
+                    <div class="article-place-right right">
+                        <label class="article-place-right-item">
+                            <input type="checkbox"></label>
+                        免配送费
+                        </label>
+                        <label class="article-place-right-item">
+                            <input type="checkbox"></label>
+                        免配送费
+                        </label>
+                        <label class="article-place-right-item">
+                            <input type="checkbox"></label>
+                        免配送费
+                        </label>
+                        <label class="article-place-right-item">
+                            <input type="checkbox"></label>
+                        免配送费
+                        </label>
+                    </div>
+                    <div class="search none" role="search">
+                        <a ubt-data-keyword="" class="place-search-btn icon-search" title="搜索餐厅或美食"></a>
+                        <!--<label for="globalsearch">搜索餐厅或美食</label>-->
+                        <input class="place-search-input ng-pristine ng-valid" placeholder="搜索餐厅,美食...">
+                        <div class="searchbox">
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div class="article-place clearfix">
-                <div class="article-place-left left">
-                    <a class="article-place-left-item focus">默认排序</a>
-                    <a class="article-place-left-item">销量</a>
-                    <a class="article-place-left-item">评价</a>
-                    <a class="article-place-left-item">其他排序
-                        <i class="icon-arrow-down"></i>
-                    </a>
-                    <a class="article-place-left-item">起送价
-                        <i class="icon-arrow-down"></i>
-                    </a>
-                </div>
-                <div class="article-place-right right">
-                    <label class="article-place-right-item">
-                        <input type="checkbox"></label>
-                        免配送费
-                    </label>
-                    <label class="article-place-right-item">
-                        <input type="checkbox"></label>
-                        免配送费
-                    </label>
-                    <label class="article-place-right-item">
-                        <input type="checkbox"></label>
-                        免配送费
-                    </label>
-                    <label class="article-place-right-item">
-                        <input type="checkbox"></label>
-                        免配送费
-                    </label>
-                </div>
-            </div>
+
             <!--
             <div class="article-tip">
                 <span class="article-tip-content">
@@ -203,14 +213,27 @@
                             <span class="store-monthsales">月销2009份</span>
                             <div class=store-cost">10元起送 / 免费配送</div>
                             <div class="store-activity">
-                                <i style="background:#CC22E2;">减</i>
-                                <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-                                <i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-                                <i style="background:#fff;color:#3190E8;border:1px solid;padding:0;">赔</i>
+                                <i class="activity" style="background:#CC22E2;">减</i>
+                                <i class="activity" style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                                <i class="activity" style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+                                <i class="activity" style="background:#fff;color:#3190E8;border:1px solid;padding:0;">赔</i>
                             </div>
                         </div>
-                        <div class=" store-bubble bubble">
-                                fsfdgsgsgfdsgfdgfdsssssssssssss
+                        <div class=" store-bubble bubble none">
+                            <div class="bubblue-head">
+                                <div class="store-title">潘大师炸鸡腿.饭</div>
+                                <div class="font999">西式,汉堡</div>
+                            </div>
+                            <div class="bubble-center">
+                                <div class="bubble-activity">
+                                    <li><i class="activity" style="background:#CC22E2;">减</i><span>优惠信息</span></li>
+                                    <li><i class="activity" style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i><span>优惠信息</span></li>
+                                    <li><i class="activity" style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i><span>优惠信息</span></li>
+                                    <li><i class="activity" style="background:#fff;color:#3190E8;border:1px solid;padding:0;">赔</i><span>优惠信息</span></li>
+                                </div>
+                                <div class="bubble-tab"><span>0元起送</span><span>配送费9元</span><span class="clearBorder">平均36分钟送达</span></div>
+                                <div class="bubble-remark">本餐厅不使用饿了么配送，由肯德基宅急送官方品牌配送，会员用户无法享受免配送费服务</div>
+                            </div>
                         </div>
                     </a>
 
@@ -228,10 +251,10 @@
                             <span class="store-monthsales">月销2009份</span>
                             <div class=store-cost">10元起送 / 免费配送</div>
                             <div class="store-activity">
-                                <i style="background:#CC22E2;">减</i>
-                                <i style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
-                                <i style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
-                                <i style="background:#fff;color:#3190E8;border:1px solid;padding:0;">赔</i>
+                                <i class="activity" style="background:#CC22E2;">减</i>
+                                <i class="activity" style="background:#fff;color:#FF4E00;border:1px solid;padding:0;">付</i>
+                                <i class="activity" style="background:#fff;color:#9071CB;border:1px solid;padding:0;">票</i>
+                                <i class="activity" style="background:#fff;color:#3190E8;border:1px solid;padding:0;">赔</i>
                             </div>
                         </div>
                     </a>
