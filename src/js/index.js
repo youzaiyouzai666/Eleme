@@ -10,7 +10,9 @@ $.fn.smartFloat = function() {
             console.log(scrolls > top);
             if (scrolls > top) { //如果滚动到页面超出了当前元素element的相对页面顶部的高度
                 if (window.XMLHttpRequest) { //如果不是ie6
-                    $(this).find('.search').removeClass('none');
+//                    alert(element.find('.search').html());
+                    element.find('.search').removeClass('none');
+                    element.find('.article-place-right').removeClass('right').addClass('left');
                     element.css({ //设置css
                         position: "fixed", //固定定位,即不再跟随滚动
 //                        background:'#ccc',
@@ -27,7 +29,8 @@ $.fn.smartFloat = function() {
                     position: pos,
                     top: top
                 }).removeClass("shadow");//移除阴影样式.shadow
-                $(this).find('.search').addClass('none');
+                element.find('.search').addClass('none');
+                element.find('.article-place-right').removeClass('left').addClass('right');
             }
         });
     };

@@ -32,3 +32,12 @@
 .font999{
   color: #999999;
 }
+.shadow{
+//  position: fixed;
+//  top: 0px;
+//  margin-left: -1px;
+//  width: 960px;
+  border: 1px solid #E6E6E6;
+  margin-top: 0px;
+  box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.2);
+}
