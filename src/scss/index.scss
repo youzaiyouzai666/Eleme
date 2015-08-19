@@ -157,9 +157,9 @@
   .article-place-left-item:hover .place-other .icon-arrow-up{
     display: block;
   }
-  .icon-arrow-down,.icon-arrow-up{
-    float: right;
-  }
+//  .icon-arrow-down,.icon-arrow-up{
+//    float: right;
+//  }
   .article-place-left-item .place-price{
     position: relative;
     z-index: 11
@@ -347,4 +347,8 @@
   .clearBorder{
     border-right: none;
   }
+}
+.icon-arrow-up{
+  position: relative;
+  z-index:10
 }
