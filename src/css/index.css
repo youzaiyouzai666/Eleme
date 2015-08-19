@@ -480,8 +480,9 @@ dialog::backdrop {
   background: #006bc7; }
 
 .banner {
-  height: 98px;
-  background: #ccc; }
+  height: auto;
+  background: #ccc;
+  position: relative; }
 
 .sidebar {
   position: fixed;
@@ -1228,8 +1229,26 @@ html, html *, html :after, html :before {
     padding: 0px 10px;
     cursor: pointer;
     position: relative; }
-  .article-place .place-other {
-    z-index: 1; }
+  .article-place .article-place-left-item .place-other {
+    position: relative;
+    z-index: 11; }
+  .article-place .article-place-left-item:hover .article-up {
+    display: block; }
+  .article-place .article-place-left-item:hover .place-other .icon-arrow-down {
+    display: none; }
+  .article-place .article-place-left-item:hover .place-other .icon-arrow-up {
+    display: block; }
+  .article-place .icon-arrow-down, .article-place .icon-arrow-up {
+    float: right; }
+  .article-place .article-place-left-item .place-price {
+    position: relative;
+    z-index: 11; }
+  .article-place .article-place-left-item:hover .place-price .icon-arrow-down {
+    display: none; }
+  .article-place .article-place-left-item:hover .place-price .icon-arrow-up {
+    display: block; }
+  .article-place .article-up a:hover {
+    color: #0089DC; }
   .article-place .article-up {
     position: absolute;
     width: 97px;

@@ -6,6 +6,7 @@ $.fn.smartFloat = function() {
         var top = element.position().top; //当前元素对象element距离浏览器上边缘的距离
         var pos = element.css("position"); //当前元素距离页面document顶部的距离
         $(window).scroll(function() { //侦听滚动时
+            console.log(element.scrollTop());
             var scrolls = $(this).scrollTop();
             console.log(scrolls > top);
             if (scrolls > top) { //如果滚动到页面超出了当前元素element的相对页面顶部的高度
@@ -51,34 +52,30 @@ function position(ele){
         }
     });
 }
+function setTime(){
+    var imgs = [];
+    var length = $('#js_banner').find('img').size();
+    alert(length);
+    for(var i=0;i<length;i++){
+        imgs.push( $('#js_banner').find('img').eq(i));
+    };
+    var index = 0 ;
+    setInterval(function(){
+        if(index<(length-1)){
+            imgs[index].addClass("none");
+            imgs[index+1].removeClass("none");
+            index++;
+        }else{
+            imgs[length-1].addClass("none");
+            imgs[0].removeClass("none");
+            index = 0;
+        }
+
+    },1000);
+}
 $(function(){
-
-    $(function(){
-        $("#banner").slidesjs({
-            width: 940,
-            height: 528
-        });
-    });
     $('#js-top').smartFloat();
-//    var top = $('#js-top').position().top;
-//    var pos = element.css("position"); //当前元素距离页面document顶部的距离
-//    $(window).scroll(function(){
-//        var scroll = $(this).scrollTop();
-//        if(scroll>top){
-//            $('#js-top').css({
-//                position:'fixed',
-//                top:0,
-//                background:'#ccc'
-//            });
-//        }else{
-//            $('#js-top').css({
-//                position: pos,
-//                top: top
-//            });
-//        }
-//    });
-
 });
 window.onload = function(){
-
-}
+    setTime();
+};

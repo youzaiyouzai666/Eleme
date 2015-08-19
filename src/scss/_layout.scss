@@ -66,8 +66,9 @@ $width :90%;//整个页面的宽度
   background: #006bc7
 }
 .banner{
-  height: 98px;
+  height: auto;
   background: #ccc;
+  position: relative;
 }
 
 .sidebar {

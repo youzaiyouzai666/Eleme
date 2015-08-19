@@ -144,8 +144,34 @@
     cursor: pointer;
     position: relative;
   }
-  .place-other{
-    z-index: 1;
+  .article-place-left-item .place-other{
+    position: relative;
+    z-index: 11
+  }
+  .article-place-left-item:hover  .article-up{
+    display: block;
+  }
+  .article-place-left-item:hover .place-other .icon-arrow-down{
+    display: none;
+  }
+  .article-place-left-item:hover .place-other .icon-arrow-up{
+    display: block;
+  }
+  .icon-arrow-down,.icon-arrow-up{
+    float: right;
+  }
+  .article-place-left-item .place-price{
+    position: relative;
+    z-index: 11
+  }
+  .article-place-left-item:hover .place-price .icon-arrow-down{
+    display: none;
+  }
+  .article-place-left-item:hover .place-price .icon-arrow-up{
+    display: block;
+  }
+  .article-up a:hover{
+    color: #0089DC;
   }
   .article-up{
     position: absolute;
@@ -170,6 +196,7 @@
     border-left: 1px solid #CCCCCC;
   }
 }
+
 
 .article-tip{
   margin-top: 10px;
