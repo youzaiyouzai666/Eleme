@@ -1,4 +1,4 @@
-$width :90%;//整个页面的宽度
+$width :996px;;//整个页面的宽度
 @mixin center($value:$width ){
   margin-left:auto;
   margin-right:auto;
@@ -7,11 +7,6 @@ $width :90%;//整个页面的宽度
 }
 .page_center{
   @include center();
-}
-@media (min-width:1280px) {
-  .page_center {
-    width: 1216px
-  }
 }
 @media (min-width:1280px) {
   .page_center {
@@ -66,9 +61,10 @@ $width :90%;//整个页面的宽度
   background: #006bc7
 }
 .banner{
-  height: auto;
   background: #ccc;
   position: relative;
+  height: 81px;
+  overflow: hidden;
   .img-indexs{
     position: absolute;
     bottom: 5px;
@@ -92,6 +88,15 @@ $width :90%;//整个页面的宽度
       font-weight: 700;
     }
   }
+}
+@media (min-width:1280px) {
+  .banner {
+    height: 98px;
+    img{
+      height: 98px;
+    }
+  }
+
 }
 
 

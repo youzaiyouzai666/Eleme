@@ -435,12 +435,9 @@ dialog::backdrop {
 .page_center {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 996px;
   height: auto; }
 
-@media (min-width: 1280px) {
-  .page_center {
-    width: 1216px; } }
 @media (min-width: 1280px) {
   .page_center {
     width: 1216px; } }
@@ -480,9 +477,10 @@ dialog::backdrop {
   background: #006bc7; }
 
 .banner {
-  height: auto;
   background: #ccc;
-  position: relative; }
+  position: relative;
+  height: 81px;
+  overflow: hidden; }
   .banner .img-indexs {
     position: absolute;
     bottom: 5px;
@@ -504,6 +502,11 @@ dialog::backdrop {
       color: #FFF;
       font-weight: 700; }
 
+@media (min-width: 1280px) {
+  .banner {
+    height: 98px; }
+    .banner img {
+      height: 98px; } }
 .sidebar {
   position: fixed;
   top: 0px;
