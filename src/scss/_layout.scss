@@ -4,6 +4,7 @@ $width :996px;;//整个页面的宽度
   margin-right:auto;
   width: $value;
   height: auto;
+  padding-right: 36px
 }
 .page_center{
   @include center();
@@ -65,6 +66,11 @@ $width :996px;;//整个页面的宽度
   position: relative;
   height: 81px;
   overflow: hidden;
+  .banner-imgs{
+    position: absolute;
+//    left: 0;
+//    top:0
+  }
   .img-indexs{
     position: absolute;
     bottom: 5px;

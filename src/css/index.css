@@ -436,7 +436,8 @@ dialog::backdrop {
   margin-left: auto;
   margin-right: auto;
   width: 996px;
-  height: auto; }
+  height: auto;
+  padding-right: 36px; }
 
 @media (min-width: 1280px) {
   .page_center {
@@ -446,6 +447,7 @@ dialog::backdrop {
   margin-right: auto;
   width: 100%;
   height: auto;
+  padding-right: 36px;
   height: 60px;
   background-color: #1E89E0; }
 
@@ -481,6 +483,8 @@ dialog::backdrop {
   position: relative;
   height: 81px;
   overflow: hidden; }
+  .banner .banner-imgs {
+    position: absolute; }
   .banner .img-indexs {
     position: absolute;
     bottom: 5px;
