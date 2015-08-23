@@ -1,3 +1,4 @@
+
 body,html {
   background: #f7f7f7
 }
@@ -487,16 +488,13 @@ html,html *,html :after,html :before {
   content: "\e663"
 }
 /********************************************气泡*********************************/
-.bubble{
-  background: #FFFFFF;
-  border: 2px solid #cccccc;
-  width: 100%;
+.bubble,.bubble-left{
   z-index:6 ;
   height: auto;
   position:relative;
 
 }
-.bubble:after,.bubble:before{
+.bubble:after,.bubble:before,.bubble-left:after,.bubble-left:before{
   content: " ";
 //  box-sizing: border-box;
   position: absolute;
@@ -510,11 +508,23 @@ html,html *,html :after,html :before {
 
   border-color:  transparent #FFFFFF transparent transparent;
 }
+.bubble-left:after{
+  right: -19px;
+  top:20px;
+
+  border-color:  transparent  transparent transparent #FFFFFF;
+}
 .bubble:before{
   left: -20px;
   top:20px;
 
   border-color: transparent #cccccc  transparent transparent ;
+}
+.bubble-left:before{
+  right: -20px;
+  top:20px;
+
+  border-color: transparent   transparent transparent #cccccc ;
 }
 .activity{
     display: inline-block;

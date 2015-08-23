@@ -73,11 +73,6 @@ html {
 //  font-size: 62.5%; /* 10/16=62.5% */
 }
 
-body {
-  font-size: 14px;
-  line-height: 1.8;
-  text-align: center;
-}
 /**
  * 所有 font-family 小写，存在空格的字体名加单引号
  * @default-font: 'helvetica neue', tahoma, \5B8B\4F53, sans-serif;
@@ -103,7 +98,7 @@ textarea  /* 1 */
 //  font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
 //  -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
 //  text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis; /* 5 */
-  font: 300 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans
+  font: 300 14px/1.8 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans
 }
 
 /**

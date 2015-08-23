@@ -48,7 +48,6 @@ $width :996px;;//整个页面的宽度
   .topbar-item {
     width: 144px
   }
-
 }
 .location-search{
   height: 54px;
@@ -241,7 +240,15 @@ $width :996px;;//整个页面的宽度
 .footer-contect-dropbox {
   bottom: 30px;
   left: -60px;
-  text-align: center
+  text-align: center;
+  width: 142px;//修复chrome中bug
+
+  color: #999;
+  background: #FFF none repeat scroll 0% 0%;
+  padding: 4px 6px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 6;
+  position: absolute;
 }
 
 .footer-contect-dropbox img {

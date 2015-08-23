@@ -67,11 +67,6 @@ html {
   /* 1 */
   text-size-adjust: 100%; }
 
-body {
-  font-size: 14px;
-  line-height: 1.8;
-  text-align: center; }
-
 /**
  * 所有 font-family 小写，存在空格的字体名加单引号
  * @default-font: 'helvetica neue', tahoma, \5B8B\4F53, sans-serif;
@@ -92,7 +87,7 @@ button,
 input,
 select,
 textarea {
-  font: 300 1em/1.5 PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans; }
+  font: 300 14px/1.8 PingFang SC, Lantinghei SC, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans; }
 
 /**
  * 中文小于 12px 可读性很差
@@ -625,7 +620,14 @@ dialog::backdrop {
 .footer-contect-dropbox {
   bottom: 30px;
   left: -60px;
-  text-align: center; }
+  text-align: center;
+  width: 142px;
+  color: #999;
+  background: #FFF none repeat scroll 0% 0%;
+  padding: 4px 6px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 6;
+  position: absolute; }
 
 .footer-contect-dropbox img {
   width: 130px;
@@ -1088,15 +1090,12 @@ html, html *, html :after, html :before {
   content: ""; }
 
 /********************************************气泡*********************************/
-.bubble {
-  background: #FFFFFF;
-  border: 2px solid #cccccc;
-  width: 100%;
+.bubble, .bubble-left {
   z-index: 6;
   height: auto;
   position: relative; }
 
-.bubble:after, .bubble:before {
+.bubble:after, .bubble:before, .bubble-left:after, .bubble-left:before {
   content: " ";
   position: absolute;
   width: 0;
@@ -1108,10 +1107,20 @@ html, html *, html :after, html :before {
   top: 20px;
   border-color: transparent #FFFFFF transparent transparent; }
 
+.bubble-left:after {
+  right: -19px;
+  top: 20px;
+  border-color: transparent  transparent transparent #FFFFFF; }
+
 .bubble:before {
   left: -20px;
   top: 20px;
   border-color: transparent #cccccc transparent transparent; }
+
+.bubble-left:before {
+  right: -20px;
+  top: 20px;
+  border-color: transparent transparent transparent #cccccc; }
 
 .activity {
   display: inline-block;
@@ -1388,13 +1397,24 @@ html, html *, html :after, html :before {
 .store:hover .store-bubble {
   display: block; }
 
-.store-bubble {
+.store:hover .store-bubble-left {
+  display: block; }
+
+._store-bubble, .store-bubble, .store-bubble-left {
   font-size: 12px;
   position: absolute;
   top: 0;
-  right: -100%;
   padding: 10px 8px;
-  text-align: left; }
+  text-align: left;
+  background: #FFFFFF;
+  border: 2px solid #cccccc;
+  width: 100%; }
+
+.store-bubble {
+  right: -100%; }
+
+.store-bubble-left {
+  left: -100%; }
 
 .bubblue-head {
   padding: 10px 0;
@@ -1409,7 +1429,7 @@ html, html *, html :after, html :before {
   margin: 10px 0; }
   .bubble-tab span {
     border-right: 1px solid #999999;
-    padding: 0 15px; }
+    padding: 0 10px; }
   .bubble-tab .clearBorder {
     border-right: none; }
 

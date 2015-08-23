@@ -321,13 +321,27 @@
 .store:hover .store-bubble{
   display: block;
 }
-.store-bubble{
+.store:hover .store-bubble-left{
+  display: block;
+}
+._store-bubble{
   font-size: 12px;
   position: absolute;
   top: 0;
-  right: -100%;
   padding:10px 8px ;
   text-align: left;
+
+  background: #FFFFFF;
+  border: 2px solid #cccccc;
+  width: 100%;
+}
+.store-bubble{
+   @extend ._store-bubble;
+   right: -100%;
+ }
+.store-bubble-left{
+  @extend ._store-bubble;
+  left: -100%;
 }
 .bubblue-head{
   padding: 10px 0;
@@ -342,7 +356,7 @@
   margin: 10px 0;
   span{
     border-right: 1px solid #999999 ;
-    padding:0 15px;
+    padding:0 10px;
   }
   .clearBorder{
     border-right: none;
